@@ -49,7 +49,7 @@ The LCD strip also supports a swipe gesture. Swipe events are mapped to the rota
 
 ![Stream Dock N4 mapping](images/mirabox-streamdock.png?raw=true 'Stream Dock N4 mapping')
 
-### Mirabox Stream Dock M18V3
+### Mirabox Stream Dock M18V3, VSDinside M18
 
 _5x3 LCD keys, 3 buttons, 2 LEDs_
 
