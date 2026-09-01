@@ -24,6 +24,7 @@ This can only be verified on a machine with the physical device attached — not
 
 - **Dev mode**: Companion launcher → cog icon → Settings → Advanced → Developer → enable "Developer Modules" → set "Developer modules path" to the *parent* folder containing this repo (not the repo folder itself). Companion hot-reloads `dist/main.js` on rebuild; enable the module under Modules → Surfaces.
 - **Packaged install** (for handing off to another user without a build toolchain): `yarn package` produces a single `<manifest-id>-<version>.tgz` in the repo root. The other user imports it via Companion → Modules → "Import module package" (don't extract the tgz).
+  - If an official release of this module is also installed, Companion can default to using that release build instead of the freshly imported one — the imported dev/custom build has to be explicitly selected/enabled (per-surface-instance module version picker) before its device support actually takes effect. Symptom: the device is detected, but the surface stays blank/unresponsive because it's still running the official build's model list.
 - Always fully close the Mirabox/VSDinside creator software before connecting the device — it will otherwise grab the HID device before Companion can.
 
 ## Device status
